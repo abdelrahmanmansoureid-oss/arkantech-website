@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { translations } from './locales/translations';
-import logoImg from './assets/logo.svg';
+import logoImg from './assets/logo.png';
 
 /* ================================================================
    LOGO IMAGE COMPONENT
