@@ -5,13 +5,13 @@ import { translations } from './locales/translations';
    INLINE SVG LOGO  (no image loading issues on any host)
 ================================================================ */
 const LogoSVG = ({ className }) => (
-  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 185" fill="none">
-    {/* Dark left stroke of A */}
-    <polygon points="38,178 74,178 112,7 76,7" fill="#1E293B"/>
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469 386" fill="none">
+    {/* Dark charcoal left leg of A */}
+    <polygon points="285,43 198,56 55,305 93,372" fill="#172838"/>
     {/* Blue right leg of A */}
-    <polygon points="92,7 128,7 166,178 130,178" fill="#1A56FF"/>
-    {/* Blue crossbar */}
-    <polygon points="87,132 148,132 143,150 92,150" fill="#1A56FF"/>
+    <polygon points="291,76 256,139 387,367 422,302" fill="#0161F2"/>
+    {/* Blue crossbar trapezoid */}
+    <polygon points="197,241 287,241 321,300 162,300" fill="#0161F2"/>
   </svg>
 );
 
