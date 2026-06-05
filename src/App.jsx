@@ -213,10 +213,10 @@ function Hero({ t }) {
       </div>
 
       {/* Marquee */}
-      <div className="relative z-10 w-full overflow-hidden py-4 border-y border-sky-200/60 mt-4" style={{background:'rgba(224,242,254,0.6)', backdropFilter:'blur(8px)'}}>
+      <div className="relative z-10 w-full overflow-hidden py-4 border-y border-sky-200/60 mt-4" dir="ltr" style={{background:'rgba(224,242,254,0.6)', backdropFilter:'blur(8px)'}}>
         <div className={`flex gap-10 whitespace-nowrap ${t.dir === 'rtl' ? 'marquee-track-rtl' : 'marquee-track-ltr'}`} style={{width:'max-content'}}>
           {[...ticker,...ticker].map((s, i) => (
-            <span key={i} className="inline-flex items-center gap-2.5 text-sky-600/70 font-medium text-sm">
+            <span key={i} dir={t.dir} className="inline-flex items-center gap-2.5 text-sky-600/70 font-medium text-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-sky-400 inline-block" />
               {s.title}
             </span>
