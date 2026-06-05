@@ -5,13 +5,13 @@ import { translations } from './locales/translations';
    INLINE SVG LOGO  (no image loading issues on any host)
 ================================================================ */
 const LogoSVG = ({ className }) => (
-  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469 386" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" fill="none">
     {/* Dark charcoal left leg of A */}
-    <polygon points="285,43 198,56 55,305 93,372" fill="#172838"/>
+    <polygon points="236.5,25.5 149.5,38.5 6.5,287.5 44.5,354.5" fill="#172838"/>
     {/* Blue right leg of A */}
-    <polygon points="291,76 256,139 387,367 422,302" fill="#0161F2"/>
+    <polygon points="242.5,58.5 207.5,121.5 338.5,349.5 373.5,284.5" fill="#0161F2"/>
     {/* Blue crossbar trapezoid */}
-    <polygon points="197,241 287,241 321,300 162,300" fill="#0161F2"/>
+    <polygon points="148.5,223.5 238.5,223.5 272.5,282.5 113.5,282.5" fill="#0161F2"/>
   </svg>
 );
 
@@ -201,7 +201,7 @@ function Hero({ t }) {
                 <LogoSVG className="w-40 h-40 object-contain animate-float" />
               </div>
               {[
-                { icon: Icons.Wifi,    label: t.lang === 'ar' ? 'واي فاي' : 'Wi-Fi',        top: '5%',  left: '50%', color: 'bg-cyan-500' },
+                { icon: Icons.Network, label: t.lang === 'ar' ? 'بنية الإنترنت' : 'Internet Infrastructure', top: '5%',  left: '50%', color: 'bg-cyan-500' },
                 { icon: Icons.Cctv,   label: t.lang === 'ar' ? 'كاميرات' : 'CCTV',          top: '50%', left: '90%', color: 'bg-indigo-500' },
                 { icon: Icons.Access, label: t.lang === 'ar' ? 'تحكم بالدخول' : 'Access',   top: '88%', left: '50%', color: 'bg-sky-600' },
                 { icon: Icons.Sound,  label: t.lang === 'ar' ? 'أنظمة الصوت' : 'Audio',     top: '50%', left: '2%',  color: 'bg-blue-500' },
