@@ -350,7 +350,7 @@ function Contact({ t }) {
     const waMsg = encodeURIComponent(`*${form.name}*\n📞 ${form.phone}\n🔧 ${form.service}\n\n${form.msg}`);
     setTimeout(() => {
       setStatus('success');
-      window.open(`https://wa.me/201030754568?text=${waMsg}`, '_blank');
+      window.open(`https://wa.me/201041161062?text=${waMsg}`, '_blank');
       setForm({ name:'', phone:'', service:'', msg:'' });
       setTimeout(() => setStatus('idle'), 5000);
     }, 900);
@@ -378,7 +378,7 @@ function Contact({ t }) {
           {/* Channels */}
           <div className="lg:col-span-2 flex flex-col gap-4">
             {/* WhatsApp hero */}
-            <a href={`https://wa.me/201030754568?text=${waMsg}`} target="_blank" rel="noopener noreferrer"
+            <a href={`https://wa.me/201041161062?text=${waMsg}`} target="_blank" rel="noopener noreferrer"
                className="btn-whatsapp group block p-7 rounded-3xl no-underline">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -394,7 +394,7 @@ function Contact({ t }) {
             </a>
 
             {/* Phone */}
-            <a href="tel:+201030754568" className="contact-channel group">
+            <a href="tel:+201041161062" className="contact-channel group">
               <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center flex-shrink-0 shadow-blue group-hover:scale-105 transition-transform">
                 <Icons.Phone cls="w-5 h-5 text-white" />
               </div>
@@ -406,7 +406,7 @@ function Contact({ t }) {
             </a>
 
             {/* Email */}
-            <a href="mailto:abdelrahman.mansoureid@gmail.com" className="contact-channel group">
+            <a href="mailto:info@arkantech.online" className="contact-channel group">
               <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-400 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
                 <Icons.Email cls="w-5 h-5 text-white" />
               </div>
@@ -514,9 +514,9 @@ function Footer({ t }) {
             <p className="text-sky-300/60 text-sm leading-relaxed mb-5">{t.footer.tagline}</p>
             <div className="flex gap-2">
               {[
-                { href:`https://wa.me/201030754568?text=${waMsg}`, Icon:Icons.WhatsApp, color:'hover:bg-brand-whatsapp hover:border-brand-whatsapp text-brand-whatsapp', tgt:'_blank' },
-                { href:'tel:+201030754568',                        Icon:Icons.Phone,    color:'hover:bg-sky-600 hover:border-sky-600 text-sky-400' },
-                { href:'mailto:abdelrahman.mansoureid@gmail.com',  Icon:Icons.Email,    color:'hover:bg-indigo-500 hover:border-indigo-500 text-indigo-400' },
+                { href:`https://wa.me/201041161062?text=${waMsg}`, Icon:Icons.WhatsApp, color:'hover:bg-brand-whatsapp hover:border-brand-whatsapp text-brand-whatsapp', tgt:'_blank' },
+                { href:'tel:+201041161062',                        Icon:Icons.Phone,    color:'hover:bg-sky-600 hover:border-sky-600 text-sky-400' },
+                { href:'mailto:info@arkantech.online',  Icon:Icons.Email,    color:'hover:bg-indigo-500 hover:border-indigo-500 text-indigo-400' },
               ].map((s, i) => (
                 <a key={i} href={s.href} target={s.tgt} rel="noopener noreferrer"
                    className={`w-9 h-9 rounded-xl border border-white/10 flex items-center justify-center transition-all duration-300 hover:text-white ${s.color}`}>
@@ -547,9 +547,9 @@ function Footer({ t }) {
           <div>
             <h4 className="text-white font-bold mb-4 text-sm tracking-wide uppercase">{t.footer.contact}</h4>
             <ul className="space-y-3">
-              <li><a href={`https://wa.me/201030754568?text=${waMsg}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-brand-whatsapp font-semibold text-sm hover:text-green-300 transition-colors"><Icons.WhatsApp cls="w-4 h-4" /> WhatsApp</a></li>
-              <li><a href="tel:+201030754568" className="inline-flex items-center gap-2 text-sky-300/60 text-sm hover:text-white transition-colors" dir="ltr"><Icons.Phone cls="w-4 h-4 text-sky-400" /> +20 103 075 4568</a></li>
-              <li><a href="mailto:abdelrahman.mansoureid@gmail.com" className="inline-flex items-center gap-2 text-sky-300/60 text-sm hover:text-white transition-colors"><Icons.Email cls="w-4 h-4 text-indigo-400" /><span className="truncate max-w-[180px]">abdelrahman.mansoureid@gmail.com</span></a></li>
+              <li><a href={`https://wa.me/201041161062?text=${waMsg}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-brand-whatsapp font-semibold text-sm hover:text-green-300 transition-colors"><Icons.WhatsApp cls="w-4 h-4" /> WhatsApp</a></li>
+              <li><a href="tel:+201041161062" className="inline-flex items-center gap-2 text-sky-300/60 text-sm hover:text-white transition-colors" dir="ltr"><Icons.Phone cls="w-4 h-4 text-sky-400" /> +201041161062</a></li>
+              <li><a href="mailto:info@arkantech.online" className="inline-flex items-center gap-2 text-sky-300/60 text-sm hover:text-white transition-colors"><Icons.Email cls="w-4 h-4 text-indigo-400" /><span className="truncate max-w-[180px]">info@arkantech.online</span></a></li>
               <li className="inline-flex items-center gap-2 text-sky-400 text-sm font-semibold"><Icons.Location cls="w-4 h-4" /> 🇪🇬 Egypt</li>
             </ul>
           </div>
@@ -572,7 +572,7 @@ function WaFab({ lang }) {
   const waMsg = encodeURIComponent(lang === 'ar' ? 'مرحباً، أود الاستفسار عن خدماتكم.' : 'Hello, I would like to inquire about your services.');
 
   return (
-    <a href={`https://wa.me/201030754568?text=${waMsg}`} target="_blank" rel="noopener noreferrer"
+    <a href={`https://wa.me/201041161062?text=${waMsg}`} target="_blank" rel="noopener noreferrer"
        onMouseEnter={() => setHov(true)} onMouseLeave={() => setHov(false)}
        className="fixed bottom-6 z-50 flex items-center gap-3 no-underline"
        style={{ [lang === 'ar' ? 'left' : 'right']: '24px' }}>
